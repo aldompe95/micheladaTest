@@ -33,6 +33,7 @@ Agrega algunas pruebas para tu código.
 Instrucciones:
  - Crear bd y migraciones `rake db:create` y `rake db:migrate`.
  - Si lo deseeas puedes correr seeds para generar inserts listos `rake db:seed`.
+ - Correr prueba `rspec`
  - Prueba y agrega todo lo que quieras :D.
  
 MadeBy: **IMJUSTAGUY**
