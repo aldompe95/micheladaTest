@@ -1,0 +1,15 @@
+Brand.create(name: 'Cerveceria de Colima')
+Brand.create(name: 'Cerveceria Minerva')
+Brand.create(name: 'Cerveceria Allende')
+
+Product.create(brand_id: "1", name: "Colimita", description: "La cerveza favorita del sol es la representación Colimota de una lager Alemana. A la vista es dorada, brillante y cristalina, con una espuma blanca y fina. De cuerpo medio, y al paladar, una ligera nota amarga con sabores florales del lúpulo que entran en balance perfecto con la malta pilsner, esencial en su receta.", price: 19.99)
+Product.create(brand_id: "1", name: "Paramo", description: "De estilo Pale Ale, es una cerveza que intriga. Al acercarse al vaso te atrapan aromas tropicales, critrícos y pasifloras. Es ahí cuando sabes que estás a punto de vivir una grata experiencia. Bajo esa apariencia cobriza y brillante destaca un amargor prominente que rápidamente abre paso a la gama de sabores de los tres tipos de malta.", price: 19.99 )
+Product.create(brand_id: "1", name: "Ticus", description: "Su color como el de un grano de café tostado y su persistente espuma color crema, invita a hacerla volar a través del paladar. Al saborearla son las notas de las maltas tostadas, café y chocolate dulce las que salen a relucir mientras el amargor del lúpulo aparece para balancear la ecuación. Una cerveza ligera y compleja al mismo tiempo.", price: 19.99 )
+
+Product.create(brand_id: "2", name: "Colonial", description: "Esta es una cerveza de color dorado brillante con aroma suave a malta, con notas a cítricos estilo Kölsch de fermentación mixta. Para lograr el gran cuerpo que tiene, se incorpora a la mezcla malta de trigo y se extiende el tiempo de reposo posterior a la fermentación.", price: 39.99)
+Product.create(brand_id: "2", name: "Viena", description: "Es una cerveza de fermentación baja y color ámbar rojizo, presenta un tenue y limpio aroma a nuez y caramelo. Al degustarla se puede saborear su distintivo y suave dulzor proveniente de la malta aromática. La terminación es duradera y la sensación en boca es maltosa.", price: 29.99 )
+Product.create(brand_id: "2", name: "Pale Ale", description: "Cerveza de estilo English Mild Ale recibió la medalla de Oro en su categoría en el World Beer Cup 2010, convirtiéndose en la primera cerveza mexicana en ganar oro en este prestigioso concurso internacional. Sus lúpulos ingleses del estilo Kent Golding, imparten un aroma y sabor en completo balance con sus maltas caramelo y cuerpo medio.", price: 19.99 )
+
+Product.create(brand_id: "3", name: "Cerveza con Agave", description: "Cerveza única en su especie, sorprende por el balance y suavidad del ahumado caramelo del agave, combinado con frutas exóticas en un cuerpo ligero y refrescante.", price: 12.05)
+Product.create(brand_id: "3", name: "India Pale Ale", description: " Sorprendente, con énfasis en el lúpulo, que se percibe como bosque de pinos, frutas tropicales y cítricas y un agradable toque pungente.", price: 12.99 )
+Product.create(brand_id: "3", name: "Oscura", description: "Complejo festín de malta, liderado por caramelos claros y obscuros con nueces tostadas y pan negro, con una fina nota de lúpulo floral y terráqueo.", price: 11.99 )

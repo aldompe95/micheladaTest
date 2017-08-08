@@ -1,0 +1,35 @@
+@import "navPanel";
+
+#page-content-wrapper{
+  h1{
+    color: #ffffff;
+  }
+}
+
+.item{
+  margin-top: 10%;
+  text-align: center;
+  img{
+    margin: auto;
+    width: 60%;
+  }
+  h3{
+    color: #ea3434;
+  }
+  p{
+    color: #f9d026;
+    span{
+      color: #ea3434;
+    }
+  }
+}
+
+.alert{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  p{margin-left: 20%;}
+}
+

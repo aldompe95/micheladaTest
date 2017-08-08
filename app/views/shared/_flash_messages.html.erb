@@ -1,0 +1,12 @@
+<% flash.each do |type, message| %>
+  <%  if message.class == String  # regular flash notices, alerts, etc. will be strings
+    message = [message]
+  end %>
+  <% message.each do |message| %> 
+   <div class="alert <%= bootstrap_class_for(type) %> ">
+    <button class="close" data-dismiss="alert">×</button>
+      <p><%= message %></p> 
+    </div>
+  <% end %>
+<% end %>
+  

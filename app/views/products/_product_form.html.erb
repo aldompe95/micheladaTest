@@ -1,0 +1,32 @@
+<div class="product-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-4">
+        <img src="https://pbs.twimg.com/profile_images/675419907736002560/N0T5A-_J.png" class="img-responsive"></img>
+        <h2>Product</h2>
+        <%= form_for @product do |f| %>
+          <div class="form-group">
+            <%= f.label :brand %><br />
+            <%= f.select(:brand_id, options_for_select(Brand.all.collect {|p| [ p.name, p.id ] }), { include_blank: true }, class: "form-control") %>
+          </div>
+          <div class="form-group">
+            <%= f.label :name %><br />
+            <%= f.text_field :name, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= f.label :description %><br />
+            <%= f.text_field :description, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= f.label :price %><br />
+            <%= f.number_field :price, :step => 0.01, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= f.submit 'Save', class: "btn btn-success" %>
+            <%= link_to 'Nevermind', root_path, class: 'btn btn-warning', type: "number" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

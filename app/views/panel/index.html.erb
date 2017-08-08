@@ -1,0 +1,46 @@
+<div id="wrapper" class="toggled">
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <p>
+          Brands
+        </p>
+      </li>
+      <!-- Brands -->
+      <% @brands.each do |brand| %>
+        <li class="brand">
+          <p><%= brand.name %></a></p>
+          <span><%= link_to '', edit_brand_path(brand), class: "glyphicon glyphicon-pencil" %></span>
+          <span><%= link_to '', brand, class: "glyphicon glyphicon-remove", method: :delete, data: {confirm: "Are you sure you want to delete this brand?"} %></span>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <!-- Products -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Welcome to my "whatever u want" store</h1>
+          <%= link_to "Add new brand", new_brand_path, class:"btn btn-default" %>
+          <%= link_to "Add new product", new_product_path, class:"btn btn-default" %>
+        </div>
+        <% @products.each do |product| %>
+          <div class="col-md-4">
+            <div class="item">
+              <h3><%= product.name %></h3>
+              <img class="img-responsive" src="https://s-media-cache-ak0.pinimg.com/736x/6a/e8/a7/6ae8a729773b78fc3c94d451d8ccde36--beer-fridge-beer-quotes.jpg"></img>
+              <p><span>Brand:</span> <%= Brand.find(product.brand_id).name %></p>
+              <p><span>Description:</span> <%= product.description != ""? product.description : "We dont have this information" %></p>
+              <p><span>Price:</span> <%= number_to_currency(product.price) %></p>
+              <span><%= link_to '', edit_product_path(product), class: "glyphicon glyphicon-pencil" %></span>
+              <span><%= link_to '', product, class: "glyphicon glyphicon-remove", method: :delete, data: {confirm: "Are you sure you want to delete this product?"} %></span>
+            </div>
+          </div>
+        <% end %>
+    
+      </div>
+    </div>
+  </div>
+</div>
