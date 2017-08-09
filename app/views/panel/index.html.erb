@@ -25,6 +25,7 @@
           <h1>Welcome to my "whatever u want" store</h1>
           <%= link_to "Add new brand", new_brand_path, class:"btn btn-default" %>
           <%= link_to "Add new product", new_product_path, class:"btn btn-default" %>
+          <h2>TOTAL PRICE OF ALL PRODUCTS: <%= number_to_currency(@allTotalPrice) %></h2>
         </div>
         <% @products.each do |product| %>
           <div class="col-md-4">
